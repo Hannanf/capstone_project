@@ -1,7 +1,7 @@
 # Life Insurance Analysis Project
 
 
-Life insurance - 
+Life insurance is a valuable tool for Canadians to protect themselves from financial difficulties in the case of an unfortunate event, but many people are turned away from the cost. It would be beneficial to understand the components making up life insurance premiums, and help people plan the purchases.
 
 
 ## Project Overview
