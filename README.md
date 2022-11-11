@@ -1,7 +1,7 @@
 # Life Insurance Analysis Project
 
 
-Life insurance - 
+Life insurance is a valuable tool for Canadians to protect themselves from financial difficulties in the case of an unfortunate event, but many people are turned away from the cost. It would be beneficial to understand the components making up life insurance premiums, and help people plan the purchases.
 
 
 ## Project Overview
@@ -14,7 +14,7 @@ The purpose of this project is to perform an analysis on different demographic d
 **Initial Phase - Data Preparation**
 * The data was collected from Stats Canada and Kaggle. We collected demographic data including age, sex, bmi, number of children, smoker, and charges. As well as average income data from Stats Canada.
 
-** Second Phase - Data Processing**
+**Second Phase - Data Processing**
 * We will be consolidating the data into a SQL databse, and connect to a Machine learning model to apply supervised machine learning to determine correlations in determining cost of life insurance.
 
 **Final Phase - Data Presentation**
