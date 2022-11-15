@@ -12,7 +12,7 @@ The purpose of this project is to perform an analysis on different demographic d
 ## Process
 
 **Initial Phase - Data Preparation**
-* The data was collected from Stats Canada and Kaggle. We collected demographic data including age, sex, bmi, number of children, smoker, and charges. As well as average income data from Stats Canada.
+* The data was collected from Kaggle and dqydj.com. We collected demographic data including age, sex, bmi, number of children, smoker, and charges. As well as average income data from Stats Canada.
 
 **Second Phase - Data Processing**
 * We will be consolidating the data into a SQL databse, and connect to a Machine learning model to apply supervised machine learning to determine correlations in determining cost of life insurance.
