@@ -1,4 +1,4 @@
-,id,age,average income,sex,bmi,children,smoker,region,charges
+,id,age,average_income,sex,bmi,children,smoker,region,charges
 0,0,18,"$10,753.50",male,33.77,1,no,southeast,1725.5523
 1,1,18,"$10,753.50",male,34.1,0,no,southeast,1137.011
 2,2,18,"$10,753.50",female,26.315,0,no,northeast,2198.18985
