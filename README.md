@@ -80,14 +80,20 @@ Explanation of model choice, including limitations and benefits
 
 [Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
 
-A Tableau dashboard will be used for presenting the analysis, it will contain a few pages and a storyboard. We will upload the dashboard on the free server Tableau Public 2022.
-The snapshot of the worksheet visualizations will be incorporated into a Google Slides Deck for the final presentation. 
-The Tableau Dashboard will be interactive, users are able to click on different charts:
+A Tableau dashboard/Javascript webpage will be used for presenting the analysis. 
+The snapshot of the visualizations will be incorporated into a Google Slides Deck for the final presentation. 
 
-Interactive Elements:
+
+Chart Elements:
 * Bar chart: to show relationships of the cost of life insurance vs. age, users will be able to click on a specific age group to see details
 * 
 * 
+
+# Application of this project - add to slides
+
+A decription of the real world application of this project will be introduced.
+* E.g. Determine which clients may be at more risk, which clients to offer premium rates
+
 
 ## resources
 
