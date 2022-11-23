@@ -23,21 +23,24 @@ The purpose of this project is to perform an analysis on different demographic d
 
 ## Technology
 
-* Data is collected and preprocessed in Python - Jupyter Notebook, using Pandas
-* Preprocessed data is imported into Postgres using pgAdmin
-* The databse will then connect to Machine Learning model, and will be processed using Jupyter Notebook
-* The data visualization will be presented in a webpage that is coded using HTML, CSS, and Javascript; the presentation slides will be created using Google slides
+* Data is collected and preprocessed in Jupyter Notebook, using Pandas and Python
+* Preprocessed data is imported into Postgres database using pgAdmin 
+* Then using Jupyter Notebook, a Machine Learning model is created and connected to the database
+* The data visualization will be presented in a webpage that is coded using HTML, CSS, and Javascript; the presentation slides is displayed using Google slides
 
 
 ## Database
 
-The database was created in PostgresSQL, in which the data was collected from real datasets for life insurance demographics and cost. The includes all the tables, and the data is consists of total 1300 real customers.
+The database was created in PostgresSQL which includes two tables. The data was collected from real clients data for life insurance demographics and cost. The database is stored on Amazon Web Services RDS (free tier).
 
-ERD:
+ERD: (picture to be uploaded)
 
 The database meets all of the requirements of this project:
 
-* 
+* Database interfaces with the project in some format: the database interfaces with the machine learning model, and it is stored on AWS.
+* Includes at least two tables: the database includes 2 tables, we used PostgresSQL to create the tables and processed the joining for our machine learning model.
+* Includes at least one join using the database language:  
+* Includes at least one connection string: SQLalchemy is used for connecting data to the machine learning model.
 
 ## Machine Learning Model
 
@@ -55,47 +58,75 @@ Data explored:
 * Region
  
 
-Preliminary data preprocessing
+## Preliminary data preprocessing
 
-* The exploratory data analysis was conducted by consolidating 2 datasets of demographics and income information and read into a dataframe in Jupyter Notebook Using Python Pandas.
+The exploratory data analysis was conducted by consolidating 2 datasets of demographics and income information and read into a dataframe in Jupyter Notebook Using Python Pandas.
+
 * 
 
 Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
-* Target: define relationship between the indicators vs. cost
+* Target: identify which variable is highly correlated to the premium cost
 * Features: degmographics data inclusing age, bmi, number of children, and etc
-* Feature Engineering: used SQL to construct tables and transform responses into 1 or 0 (example)
+* Feature Engineering: use pandas to perform exploratory data analysis for identification (attach screenshot)
 * Decision making: determine which column is in high correlations and continue with training and testing
 
 Description of how data was split into training and testing sets
 * We splitted the dataset into training and testing sets. The model used the training dataset to learn from, and then uses the testing dataset to assess its performance.
 * SciKit Learn Library is used to split, train, and test the data
-* Training and testing snapshot
 
-Explanation of model choice, including limitations and benefits
+(Training and testing screenshot)
+
+Machine Learning Model Choice
 * Which model used
 * Benefits
 * Limitations
+
+Machine Learning Model results
+Description of how the model was trained (or retrained, if the team is using an existing model)
+Description and explanation of model's confusion matrix, including final accuracy score
+
+* Accuracy
+* Precision
+* Sensitivity
+
+## Application of this project
+
+The project introduces a real world tool for determining life insurance premiums, which could be used in medical industry to benefit clients, or either could be a powerful tool for companies to analyze clients data and determine premiums.
+Although we are only working with 1300+ rows of data in this project, however, the same methodolody could easily be utilized by insurance companies to perform more in-depth analysis.
+
+By applying this model, we could determine which clients may be at risk, and which clients could be offered premium rates:
+
+Input: age, gender, bmi, number of children, whether smoker or not, region, average income, and average life span.
+Output: The charge for the premium.
+
+How does this benefit clients:
+* Quick calculation of quote
+* Find the right coverage for each individual's unique situation
+* Plan ahead and protect loved ones
+
+How does this benefit companies:
+* Ready to use machine learning model for application
+* Identify premium rates for clients by only a few client data inputs
+
+
 
 ## Visualization
 
 [Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
 
-A Tableau dashboard/Javascript webpage will be used for presenting the analysis. 
+A Javascript webpage will be used for presenting the analysis. 
 The snapshot of the visualizations will be incorporated into a Google Slides Deck for the final presentation. 
 
+The webpage is consists of few different charts showing analysis results, as well as an input box for users to enter their demographics info to calculate the insurance premiums.
 
-Chart Elements:
-* Bar chart: to show relationships of the cost of life insurance vs. age, users will be able to click on a specific age group to see details
-* 
-* 
-
-# Application of this project - add to slides
-
-A decription of the real world application of this project will be introduced.
-* E.g. Determine which clients may be at more risk, which clients to offer premium rates
+Charts Displayed:
+* Bar chart: showing relationships of the cost of life insurance vs. age, users will be able to click on a specific age group to see details
+* Pie chart: showing the proportion of clients by income range/region
 
 
-## resources
+
+
+## Resources
 
 ## Project Team Members
 * Fayyaz Hannan 
