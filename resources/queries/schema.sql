@@ -1,21 +1,18 @@
 -- JOIN MAIN AND PERSON TABLES
-DROP TABLE IF EXISTS insurance_indexed;
+DROP TABLE IF EXISTS insurance;
 
 -- Creating tables for Insurance.
-CREATE TABLE insurance_indexed (
-	id INT NOT NULL,
+CREATE TABLE insurance (
 	age INT NOT NULL,
-	average_income VARCHAR(10) NOT NULL,
-	sex VARCHAR(6) NOT NULL,
-	bmi FLOAT(6) NOT NULL,
+	sex VARCHAR NOT NULL,
+	bmi FLOAT NOT NULL,
 	children INT NOT NULL,
-	smoker BIT NOT NULL,
-	region VARCHAR(9) NOT NULL,
-	charges FLOAT(11) NOT NULL,
-	PRIMARY KEY (id)
+	smoker VARCHAR NOT NULL,
+	region VARCHAR NOT NULL,
+	charges FLOAT NOT NULL
 );
 
-SELECT * FROM insurance_indexed;
+SELECT * FROM insurance;
 
 -- JOIN MAIN AND PERSON TABLES
 DROP TABLE IF EXISTS average_age_by_state;
