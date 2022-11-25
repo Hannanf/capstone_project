@@ -77,18 +77,19 @@ Preliminary feature engineering and preliminary feature selection, including the
 * Feature Engineering: use pandas to perform exploratory data analysis for identification (attach screenshot of code)
 * Decision making: determine which column is in high correlations and continue with training and testing
 
-Description of how data was split into training and testing sets
+### Training and testing sets
 * We splitted the dataset into training and testing sets. The model used the training dataset to learn from, and then uses the testing dataset to assess its performance.
 * SciKit Learn Library is used to split, train, and test the data
 
 (Training and testing code screenshot)
 
-Machine Learning Model Choice
-* Which model used
+### Machine Learning Model Choice: Limitations & Benefits
+We utilized a supervised machine learning model. Supervised Machine Learning deals with labeled dataset, which is a good for demographics data.
 * Benefits
+
 * Limitations
 
-Machine Learning Model results
+### Machine Learning Model results
 Description of how the model was trained (or retrained, if the team is using an existing model)
 Description and explanation of model's confusion matrix, including final accuracy score
 
