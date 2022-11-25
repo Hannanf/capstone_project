@@ -15,6 +15,24 @@ CREATE TABLE insurance (
 SELECT * FROM insurance;
 
 -- JOIN MAIN AND PERSON TABLES
+DROP TABLE IF EXISTS combined_dataframes;
+
+-- Creating tables for Insurance.
+CREATE TABLE combined_dataframes (
+	id int NOT NUll,
+	age INT NOT NULL,
+	average_income VARCHAR NOT NULL,
+	sex VARCHAR NOT NULL,
+	bmi FLOAT NOT NULL,
+	children INT NOT NULL,
+	smoker VARCHAR NOT NULL,
+	region VARCHAR NOT NULL,
+	charges FLOAT NOT NULL
+);
+
+SELECT * FROM combined_dataframes;
+
+-- JOIN MAIN AND PERSON TABLES
 DROP TABLE IF EXISTS average_age_by_state;
 
 -- Create a table for average_age_by_state.
