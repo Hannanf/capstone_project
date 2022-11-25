@@ -31,9 +31,10 @@ The purpose of this project is to perform an analysis on different demographic d
 
 ## Database
 
-The database was created in PostgresSQL which includes two tables. The data was collected from real clients data for life insurance demographics and cost. The database is stored on Amazon Web Services RDS (free tier).
+The database was created in PostgreSQL which includes two tables. The data was collected from real clients data for life insurance demographics and cost. The database is stored on Amazon Web Services RDS (free tier).
 
-ERD: (picture to be uploaded)
+ER Diagram
+![ErD](https://github.com/Hannanf/capstone_project/blob/e47cb12db72d3c0838cfa02986004bceb58e8ff6/resources/queries/Capstone_Project_ER%20Diagram.jpeg)
 
 The database meets all of the requirements of this project:
 
@@ -44,7 +45,9 @@ The database meets all of the requirements of this project:
 
 ## Machine Learning Model
 
-Goal: For the machine learning analysis, we used supervised machine learning model to explore if we can predict the cost of life insurance by demographics information.
+View the Machine Learning Model [Here](url) 
+
+Goal: For the machine learning analysis, we used supervised machine learning model to explore if we can predict the cost of life insurance by testing different demographics variables.
 
 Implications: By finding key elements that had strong correlations to the cost, such as age and income, we can perform the model and provide a strong tool for customers who are considering purchasing life insurance.
 
@@ -58,23 +61,27 @@ Data explored:
 * Region
  
 
-## Preliminary data preprocessing
+### Preliminary Data Preprocessing
 
 The exploratory data analysis was conducted by consolidating 2 datasets of demographics and income information and read into a dataframe in Jupyter Notebook Using Python Pandas.
 
-* 
+ETL Process:
+* Reformat and load in the raw data into a dataframe in Jupyter Notebook using Python Pandas Library
+* CSV files are connected to PostgreSQL Database, data is consolidated and stored on AWS
+* 2 tables are created in SQL, join applied
+* Data is scaled and normalized in the model
 
-Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
-* Target: identify which variable is highly correlated to the premium cost
-* Features: degmographics data inclusing age, bmi, number of children, and etc
-* Feature Engineering: use pandas to perform exploratory data analysis for identification (attach screenshot)
+Preliminary feature engineering and preliminary feature selection, including the decision-making process
+* Target: identify which variable is highly correlated to the insurance cost
+* Features: degmographics data inclusing age, bmi, number of children, average income, etc.
+* Feature Engineering: use pandas to perform exploratory data analysis for identification (attach screenshot of code)
 * Decision making: determine which column is in high correlations and continue with training and testing
 
 Description of how data was split into training and testing sets
 * We splitted the dataset into training and testing sets. The model used the training dataset to learn from, and then uses the testing dataset to assess its performance.
 * SciKit Learn Library is used to split, train, and test the data
 
-(Training and testing screenshot)
+(Training and testing code screenshot)
 
 Machine Learning Model Choice
 * Which model used
@@ -112,7 +119,7 @@ How does this benefit companies:
 
 ## Visualization
 
-[Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
+View the visualizations in [Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
 
 A Javascript webpage will be used for presenting the analysis. 
 The snapshot of the visualizations will be incorporated into a Google Slides Deck for the final presentation. 
