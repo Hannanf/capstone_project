@@ -53,3 +53,6 @@ VALUES
 (3, 'southeast', 78.43);
 
 SELECT * FROM average_age_by_state
+
+-- Checking the data exported from notebook.
+SELECT * FROM avg_by_region;
