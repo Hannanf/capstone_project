@@ -34,7 +34,7 @@ The purpose of this project is to perform an analysis on different demographic d
 The database was created in PostgreSQL which includes two tables. The data was collected from real clients data for life insurance demographics and cost. The database is stored on Amazon Web Services RDS (free tier).
 
 ER Diagram
-![ErD]([https://github.com/Hannanf/capstone_project/blob/e47cb12db72d3c0838cfa02986004bceb58e8ff6/resources/queries/Capstone_Project_ER%20Diagram.jpeg](https://github.com/Hannanf/capstone_project/blob/main/resources/queries/Capstone_Project_ER_Diagram.jpeg))
+![ErD](https://github.com/Hannanf/capstone_project/blob/main/resources/queries/Capstone_Project_ER_Diagram.jpeg)
 
 The database meets all of the requirements of this project:
 
