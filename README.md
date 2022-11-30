@@ -49,7 +49,7 @@ View the Machine Learning Model [Here](url)
 
 Goal: For the machine learning analysis, we used supervised machine learning model to explore if we can predict the cost of life insurance by testing different demographics variables.
 
-Implications: By finding key elements that had strong correlations to the cost, such as age and income, we can perform the model and provide a strong tool for customers who are considering purchasing life insurance.
+Implications: By finding key elements that had strong correlations to the cost, such as age and income, we can provide a strong tool for customers who are considering purchasing life insurance.
 
 Data explored:
 * Age
@@ -73,8 +73,8 @@ Data Source:
 ETL Process:
 * Reformat and load in the raw data into a dataframe in Jupyter Notebook using Python Pandas Library
 * CSV files are connected to PostgreSQL Database, data is consolidated and stored on AWS
-* 2 tables are created in SQL, join applied
-* Data is scaled and normalized in the model
+* 2 tables are created in SQL, inner join applied
+* Data is scaled and normalized in the model ?
 
 Preliminary feature engineering and preliminary feature selection, including the decision-making process
 * Target: identify which variable is highly correlated to the insurance cost
@@ -89,7 +89,7 @@ Preliminary feature engineering and preliminary feature selection, including the
 (Training and testing code screenshot)
 
 ### Machine Learning Model Choice: Limitations & Benefits
-We utilized a supervised machine learning model - Polynomial Regression. Supervised Machine Learning deals with labeled dataset, which is a good for demographics data.
+We utilized a supervised machine learning model - Polynomial Regression. Supervised Machine Learning deals with labeled dataset, which is perfect for demographics data.
 
 * Benefits ?
 
