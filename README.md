@@ -40,7 +40,7 @@ The database meets all of the requirements of this project:
 
 * Database interfaces with the project in some format: the database interfaces with the machine learning model, and it is stored on AWS.
 * Includes at least two tables: the database includes 2 tables, we used PostgresSQL to create the tables and processed the joining for our machine learning model.
-* Includes at least one join using the database language:  
+* Includes at least one join using the database language:  inner join.
 * Includes at least one connection string: SQLalchemy is used for connecting data to the machine learning model.
 
 ## Machine Learning Model
@@ -65,6 +65,11 @@ Data explored:
 
 The exploratory data analysis was conducted by consolidating 2 datasets of demographics and income information and read into a dataframe in Jupyter Notebook Using Python Pandas.
 
+Data Source:
+1. [Kaggle](https://www.kaggle.com/code/mariapushkareva/medical-insurance-cost-with-linear-regression/data)
+2. [DQYDJ](https://dqydj.com/income-percentile-by-age-calculator/)
+3. [Wikipedia](https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_life_expectancy)
+
 ETL Process:
 * Reformat and load in the raw data into a dataframe in Jupyter Notebook using Python Pandas Library
 * CSV files are connected to PostgreSQL Database, data is consolidated and stored on AWS
@@ -74,28 +79,33 @@ ETL Process:
 Preliminary feature engineering and preliminary feature selection, including the decision-making process
 * Target: identify which variable is highly correlated to the insurance cost
 * Features: degmographics data inclusing age, bmi, number of children, average income, etc.
-* Feature Engineering: use pandas to perform exploratory data analysis for identification (attach screenshot of code)
+* Feature Engineering: use pandas to perform exploratory data analysis for identification
 * Decision making: determine which column is in high correlations and continue with training and testing
 
 ### Training and testing sets
 * We splitted the dataset into training and testing sets. The model used the training dataset to learn from, and then uses the testing dataset to assess its performance.
-* SciKit Learn Library is used to split, train, and test the data
+(Description of how data was split into training and testing sets) ?
 
 (Training and testing code screenshot)
 
 ### Machine Learning Model Choice: Limitations & Benefits
-We utilized a supervised machine learning model. Supervised Machine Learning deals with labeled dataset, which is a good for demographics data.
-* Benefits
+We utilized a supervised machine learning model - Polynomial Regression. Supervised Machine Learning deals with labeled dataset, which is a good for demographics data.
+
+* Benefits ?
 
 * Limitations
+Using the Polynomial Regression model, we have to be very precise in choosing levels of degree. In this case we chose 2 as the degree, if we input 1 or 3 as defree, the accuracy will be decreased.
 
 ### Machine Learning Model results
-Description of how the model was trained (or retrained, if the team is using an existing model)
-Description and explanation of model's confusion matrix, including final accuracy score
+Description of how the model was trained ?
+* Dropped ones doesn't have correlation - sex and region, leaving the rest variables. Smoker had big impact on charges.
+?
 
-* Accuracy
-* Precision
-* Sensitivity
+Description and explanation of model's confusion matrix (last table showing predicted and actual values, will make a table)
+
+* Accuracy Score: 0.81
+* Precision: ?
+* Sensitivity: ?
 
 ## Application of this project
 
@@ -120,17 +130,17 @@ How does this benefit companies:
 
 ## Visualization
 
-View the visualizations in [Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
+[Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
 
-A Javascript webpage will be used for presenting the analysis. 
-The snapshot of the visualizations will be incorporated into a Google Slides Deck for the final presentation. 
+A Javascript webpage is presented for the project.  (url)
 
-The webpage is consists of few different charts showing analysis results, as well as an input box for users to enter their demographics info to calculate the insurance premiums.
+The snapshot of the visualizations is incorporated into a Google Slides Deck for the final presentation. 
+
+The webpage is consists of different charts showing analysis results, as well as an input box for users to enter their demographics info to calculate the insurance premiums.
 
 Charts Displayed:
 * Bar chart: showing relationships of the cost of life insurance vs. age, users will be able to click on a specific age group to see details
 * Pie chart: showing the proportion of clients by income range/region
-
 
 
 
