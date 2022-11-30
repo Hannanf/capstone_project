@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS insurance;
 
 -- Creating tables for Insurance.
 CREATE TABLE insurance (
+	id int NOT NUll,
 	age INT NOT NULL,
 	sex VARCHAR NOT NULL,
 	bmi FLOAT NOT NULL,
@@ -10,6 +11,7 @@ CREATE TABLE insurance (
 	smoker VARCHAR NOT NULL,
 	region VARCHAR NOT NULL,
 	charges FLOAT NOT NULL
+	PRIMARY KEY (id)
 );
 
 SELECT * FROM insurance;
@@ -28,6 +30,7 @@ CREATE TABLE combined_dataframes (
 	smoker VARCHAR NOT NULL,
 	region VARCHAR NOT NULL,
 	charges FLOAT NOT NULL
+	PRIMARY KEY (id)
 );
 
 SELECT * FROM combined_dataframes;
