@@ -6,7 +6,7 @@ import pickle
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
-cols = ["age" , "average_income" , "bmi",  "children", 'smoker_yes']
+
 
 
 @app.route('/')
