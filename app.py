@@ -20,12 +20,12 @@ def predict():
     feature_list = list(feature_list.values())
     feature_list = list(map(int, feature_list))
     final_features = np.array(feature_list).reshape(1, 5) 
-    final_features_df = pd.DataFrame(final_features)
     
-    prediction = model.predict(final_features_df)
+    
+    prediction = model.predict(final_features)
     output = float(prediction)
    
-    return render_template('index.html', prediction_text='Life insurance Premium is:  {}'.format(output))
+    return render_template('index.html', prediction_text= output)
 
 
 if __name__ == "__main__":
