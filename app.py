@@ -5,15 +5,15 @@ from sklearn import preprocessing
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('model.pickle', 'rb'))
 
 
 
-@app.route('/')
+@app.route('/', methods['POST','GET'])
 def home():
     return render_template('index.html')
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['POST', 'GET'])
 
 def predict():
     feature_list = request.form.to_dict()
@@ -21,9 +21,8 @@ def predict():
     feature_list = list(map(int, feature_list))
     final_features = np.array(feature_list).reshape(1, 5) 
     
-    
-    prediction = model.predict(final_features)
-    output = float(prediction)
+
+    output = model.predict(final_features)[0][0]
    
     return render_template('index.html', prediction_text= output)
 
