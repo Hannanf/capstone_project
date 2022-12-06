@@ -5,7 +5,7 @@ from sklearn import preprocessing
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('finalized_model.sav', 'rb'))
 
 
 
@@ -22,7 +22,7 @@ def predict():
     final_features = np.array(feature_list).reshape(1, 5) 
     
     prediction = model.predict(final_features)
-    output = int(prediction[0])
+    output = int(prediction)
    
     return render_template('index.html', prediction_text='Life insurance Premium is:  {}'.format(output))
 
