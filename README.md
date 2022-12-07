@@ -45,7 +45,6 @@ The database meets all of the requirements of this project:
 
 ## Machine Learning Model
 
-View the Machine Learning Model [Here](url) 
 
 Goal: For the machine learning analysis, we used supervised machine learning model to explore if we can predict the cost of life insurance by testing different demographics variables.
 
@@ -132,19 +131,19 @@ How does this benefit companies:
 
 [Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
 
-A Javascript webpage is presented for the project.  (url)
+A Javascript webpage is presented for the project.  
 
 The snapshot of the visualizations is incorporated into a Google Slides Deck for the final presentation. 
 
-The webpage is consists of different charts showing analysis results, as well as an input box for users to enter their demographics info to calculate the insurance premiums.
+The webpage is an interative tool where an input box is available for users to enter their demographics info to calculate the insurance premiums.
 
 Charts Displayed:
-* Bar chart: showing relationships of the cost of life insurance vs. age, users will be able to click on a specific age group to see details
-* Pie chart: showing the proportion of clients by income range/region
+* Scatter Plot: showing relationships of the cost of life insurance vs. Age and BMI
+* Bar Chart: showing the difference between Smoker and Non Smokers vs. Charge
 
 
 
-## Resources
+
 
 ## Project Team Members
 * Fayyaz Hannan 
