@@ -9,11 +9,11 @@ model = pickle.load(open('model.pickle', 'rb'))
 
 
 
-@app.route('/', methods['POST','GET'])
+@app.route('/', methods['POST'])
 def home():
     return render_template('index.html')
 
-@app.route('/predict',methods=['POST', 'GET'])
+@app.route('/predict',methods=['POST'])
 
 def predict():
     feature_list = request.form.to_dict()
@@ -22,7 +22,7 @@ def predict():
     final_features = np.array(feature_list).reshape(1, 5) 
     
 
-    output = model.predict(final_features)[0][0]
+    output = model.predict(final_features)[0]
    
     return render_template('index.html', prediction_text= output)
 
