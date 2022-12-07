@@ -85,7 +85,7 @@ Preliminary feature engineering and preliminary feature selection, including the
 * We splitted the dataset into training and testing sets. The model used the training dataset to learn from, and then uses the testing dataset to assess its performance.
 (Description of how data was split into training and testing sets) ?
 
-(Training and testing code screenshot)
+![train](https://github.com/Hannanf/capstone_project/blob/85c4599005b0800f44a74e40e5b9fb9f9ed341a8/images/train.png)
 
 ### Machine Learning Model Choice: Limitations & Benefits
 We utilized a supervised machine learning model - Polynomial Regression. Supervised Machine Learning deals with labeled dataset, which is perfect for demographics data.
@@ -131,7 +131,7 @@ How does this benefit companies:
 
 [Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
 
-A Javascript webpage is presented for the project.  
+(snapshot of webpage) 
 
 The snapshot of the visualizations is incorporated into a Google Slides Deck for the final presentation. 
 
