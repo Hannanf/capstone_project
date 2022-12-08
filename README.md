@@ -15,7 +15,7 @@ The purpose of this project is to perform an analysis on different demographic d
 * The data was collected from Kaggle and dqydj.com. We collected demographic data including age, sex, bmi, number of children, smoker, and charges. As well as average income data from Stats Canada.
 
 **Second Phase - Data Processing**
-* We will be consolidating the data into a SQL databse, and connect to a Machine learning model to apply supervised machine learning to determine correlations in determining cost of life insurance.
+* We will be consolidating the data into a SQL database, and connect to a Machine learning model to apply supervised machine learning to determine correlations in determining cost of life insurance.
 
 **Final Phase - Data Presentation**
 * The analysis will be transformed into a webpage for visualization, a slide will be provided for final presentation.
@@ -45,7 +45,6 @@ The database meets all of the requirements of this project:
 
 ## Machine Learning Model
 
-
 Goal: For the machine learning analysis, we used supervised machine learning model to explore if we can predict the cost of life insurance by testing different demographics variables.
 
 Implications: By finding key elements that had strong correlations to the cost, such as age and income, we can provide a strong tool for customers who are considering purchasing life insurance.
@@ -70,35 +69,41 @@ Data Source:
 3. [Wikipedia](https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_life_expectancy)
 
 ETL Process:
-* Reformat and load in the raw data into a dataframe in Jupyter Notebook using Python Pandas Library
+* Reformat and load in the raw data into a data frame in Jupyter Notebook using Python Pandas Library
 * CSV files are connected to PostgreSQL Database, data is consolidated and stored on AWS
-* 2 tables are created in SQL, inner join applied
-* Data is scaled and normalized in the model ?
+* 3 tables are created in SQL, inner join applied
 
 Preliminary feature engineering and preliminary feature selection, including the decision-making process
 * Target: identify which variable is highly correlated to the insurance cost
-* Features: degmographics data inclusing age, bmi, number of children, average income, etc.
+* Features: demographics data including age, BMI, number of children, average income, etc.
 * Feature Engineering: use pandas to perform exploratory data analysis for identification
 * Decision making: determine which column is in high correlations and continue with training and testing
 
 ### Training and testing sets
-* We splitted the dataset into training and testing sets. The model used the training dataset to learn from, and then uses the testing dataset to assess its performance.
-(Description of how data was split into training and testing sets) ?
+* We split the dataset into training and testing sets. The model used the training dataset to learn from, and then uses the testing dataset to assess its performance.
+
+The data was split into 2 segments. 80 percent of the data was used to train the model and the remaining 20 percent was used to test the model. Please see code below:
 
 ![train](https://github.com/Hannanf/capstone_project/blob/85c4599005b0800f44a74e40e5b9fb9f9ed341a8/images/train.png)
 
 ### Machine Learning Model Choice: Limitations & Benefits
 We utilized a supervised machine learning model - Polynomial Regression. Supervised Machine Learning deals with labeled dataset, which is perfect for demographics data.
 
-* Benefits ?
+* Benefits:
+* Great for determining relationship between multiple inputs (independent variables) and single output (dependent variable)
 
-* Limitations
-Using the Polynomial Regression model, we have to be very precise in choosing levels of degree. In this case we chose 2 as the degree, if we input 1 or 3 as defree, the accuracy will be decreased.
+* Limitations:
+Very sensitive to outliers. The model will not perform as expected if there are outliers. This means the data we input into the model must be very clean 
+
 
 ### Machine Learning Model results
-Description of how the model was trained ?
-* Dropped ones doesn't have correlation - sex and region, leaving the rest variables. Smoker had big impact on charges.
-?
+Description of how the model was trained 
+* 1) We first looked at which variables had no impact on our output. This was done by determining the correlation between the variables. We concluded that the following variables did not have an impact on the output and therefore they were dropped - sex and region, leaving the rest variables. Smoker had big impact on charges.
+* 2) We chose a polynomial regression model becuase we had multiple inputs and one output. This model was also chosen becuase we had output labels 
+* 3) we created a for-loop to determine which degree would yield the highest accuracy. it was determined that a polynomial regression model with a degree of 2 yielded the greatest accuracy. We also created a graph to show the relationship between number of degrees and R2 values (see figure below) 
+* 4) We divided the data into testing and training sets and ran the model 
+* 5) we monitored how well our model was doing by comparing the training outputs to the testing outputs 
+
 
 Description and explanation of model's confusion matrix (last table showing predicted and actual values, will make a table)
 
@@ -109,11 +114,11 @@ Description and explanation of model's confusion matrix (last table showing pred
 ## Application of this project
 
 The project introduces a real world tool for determining life insurance premiums, which could be used in medical industry to benefit clients, or either could be a powerful tool for companies to analyze clients data and determine premiums.
-Although we are only working with 1300+ rows of data in this project, however, the same methodolody could easily be utilized by insurance companies to perform more in-depth analysis.
+Although we are only working with 1300+ rows of data in this project, however, the same methodology could easily be utilized by insurance companies to perform more in-depth analysis.
 
 By applying this model, we could determine which clients may be at risk, and which clients could be offered premium rates:
 
-Input: age, gender, bmi, number of children, whether smoker or not, region, average income, and average life span.
+Input: age, gender, BMI, number of children, whether smoker or not, region, average income, and average life span.
 Output: The charge for the premium.
 
 How does this benefit clients:
@@ -137,10 +142,10 @@ The snapshot of the visualizations is incorporated into a Google Slides Deck for
 
 The webpage is an interative tool where an input box is available for users to enter their demographics info to calculate the insurance premiums.
 
+
 Charts Displayed:
 * Scatter Plot: showing relationships of the cost of life insurance vs. Age and BMI
 * Bar Chart: showing the difference between Smoker and Non Smokers vs. Charge
-
 
 
 
