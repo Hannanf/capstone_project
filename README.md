@@ -140,11 +140,13 @@ How does this benefit companies:
 
 The snapshot of the visualizations is incorporated into a Google Slides Deck for the final presentation. 
 
-The webpage is an interactive tool where an input box is available for users to enter their demographics info to calculate the insurance premiums.
+The webpage is an interative tool where an input box is available for users to enter their demographics info to calculate the insurance premiums.
+
 
 Charts Displayed:
 * Scatter Plot: showing relationships of the cost of life insurance vs. Age and BMI
 * Bar Chart: showing the difference between Smoker and Non Smokers vs. Charge
+
 
 
 
