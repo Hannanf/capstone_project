@@ -105,6 +105,7 @@ Description of how the model was trained
 * 5) we monitored how well our model was doing by comparing the training outputs to the testing outputs 
 
 ![image](https://user-images.githubusercontent.com/103878061/206368616-0bbfd07b-82b2-48d5-b21f-41bbfd5c32c4.png)
+
 Figure-- # degrees chosen for model vs. R2 values 
 
 
