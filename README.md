@@ -89,11 +89,9 @@ The data was split into 2 segments. 80 percent of the data was used to train the
 ### Machine Learning Model Choice: Limitations & Benefits
 We utilized a supervised machine learning model - Polynomial Regression. Supervised Machine Learning deals with labeled dataset, which is perfect for demographics data.
 
-* Benefits:
-* Great for determining relationship between multiple inputs (independent variables) and single output (dependent variable)
+* Benefits: Great for determining relationship between multiple inputs (independent variables) and single output (dependent variable)
 
-* Limitations:
-Very sensitive to outliers. The model will not perform as expected if there are outliers. This means the data we input into the model must be very clean 
+* Limitations: Very sensitive to outliers. The model will not perform as expected if there are outliers. This means the data we input into the model must be very clean 
 
 
 ### Machine Learning Model results
@@ -102,7 +100,7 @@ Description of how the model was trained
 * 2) We chose a polynomial regression model becuase we had multiple inputs and one output. This model was also chosen becuase we had output labels 
 * 3) we created a for-loop to determine which degree would yield the highest R2. it was determined that a polynomial regression model with a degree of 2 yield the greatest R2 value. We also created a graph to show the relationship between number of degrees and R2 values (see figure below) 
 * 4) We divided the data into testing and training sets and ran the model 
-* 5) we monitored how well our model was doing by comparing the training outputs to the testing outputs 
+* 5) We monitored how well our model was doing by comparing the training outputs to the testing outputs 
 
 ![image](https://user-images.githubusercontent.com/103878061/206368616-0bbfd07b-82b2-48d5-b21f-41bbfd5c32c4.png)
 
@@ -142,16 +140,12 @@ How does this benefit companies:
 
 [Google Slides Deck](https://docs.google.com/presentation/d/1whnuTL6ZM5WVz83VrgLC6633P-9DmyqtbOEfLG1-kRU/edit?usp=share_link)
 
-(snapshot of webpage) 
+![web](https://github.com/Hannanf/capstone_project/blob/85ba5d3e01e48b19a3a7ab9df8d6fef1c1a4cff3/images/web.png) 
 
 The snapshot of the visualizations is incorporated into a Google Slides Deck for the final presentation. 
 
 The webpage is an interative tool where an input box is available for users to enter their demographics info to calculate the insurance premiums.
 
-
-Charts Displayed:
-* Scatter Plot: showing relationships of the cost of life insurance vs. Age and BMI
-* Bar Chart: showing the difference between Smoker and Non Smokers vs. Charge
 
 
 
