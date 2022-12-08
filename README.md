@@ -100,7 +100,7 @@ Very sensitive to outliers. The model will not perform as expected if there are 
 Description of how the model was trained 
 * 1) We first looked at which variables had no impact on our output. This was done by determining the correlation between the variables. We concluded that the following variables did not have an impact on the output and therefore they were dropped - sex and region, leaving the rest variables. Smoker had big impact on charges.
 * 2) We chose a polynomial regression model becuase we had multiple inputs and one output. This model was also chosen becuase we had output labels 
-* 3) we created a for-loop to determine which degree would yield the highest accuracy. it was determined that a polynomial regression model with a degree of 2 yielded the greatest accuracy. We also created a graph to show the relationship between number of degrees and R2 values (see figure below) 
+* 3) we created a for-loop to determine which degree would yield the highest R2. it was determined that a polynomial regression model with a degree of 2 yield the greatest R2 value. We also created a graph to show the relationship between number of degrees and R2 values (see figure below) 
 * 4) We divided the data into testing and training sets and ran the model 
 * 5) we monitored how well our model was doing by comparing the training outputs to the testing outputs 
 
@@ -109,11 +109,13 @@ Description of how the model was trained
 Figure-- # degrees chosen for model vs. R2 values 
 
 
-Description and explanation of model's confusion matrix (last table showing predicted and actual values, will make a table)
+* R2 Value: 0.81: Below is the table with acutal values vs predicted values 
 
-* Accuracy Score: 0.81
-* Precision: ?
-* Sensitivity: ?
+![image](https://user-images.githubusercontent.com/103878061/206374532-fa216319-2181-42ca-8a41-599130f7a249.png)
+
+Figure: Actual vs. predicted values 
+
+
 
 ## Application of this project
 
